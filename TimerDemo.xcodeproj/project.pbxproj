@@ -3,27 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8540E4612628133700E662F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540E4602628133700E662F4 /* AppDelegate.swift */; };
-		8540E4632628133700E662F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540E4622628133700E662F4 /* SceneDelegate.swift */; };
-		8540E4652628133700E662F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540E4642628133700E662F4 /* ViewController.swift */; };
-		8540E4682628133700E662F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8540E4662628133700E662F4 /* Main.storyboard */; };
 		8540E46A2628133800E662F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8540E4692628133800E662F4 /* Assets.xcassets */; };
 		8540E46D2628133800E662F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8540E46B2628133800E662F4 /* LaunchScreen.storyboard */; };
+		8540E47D262813CA00E662F4 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540E47C262813CA00E662F4 /* TimerViewController.swift */; };
+		8540E480262813E800E662F4 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540E47F262813E800E662F4 /* TimerViewModel.swift */; };
+		8540E484262814DD00E662F4 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8540E483262814DD00E662F4 /* ReactorKit */; };
+		8540E488262824A700E662F4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8540E487262824A700E662F4 /* SnapKit */; };
+		8540E48C2628258500E662F4 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 8540E48B2628258500E662F4 /* Differentiator */; };
+		8540E48E2628258500E662F4 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 8540E48D2628258500E662F4 /* RxDataSources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8540E45D2628133700E662F4 /* TimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8540E4602628133700E662F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8540E4622628133700E662F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8540E4642628133700E662F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8540E4672628133700E662F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8540E4692628133800E662F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8540E46C2628133800E662F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8540E46E2628133800E662F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8540E47C262813CA00E662F4 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		8540E47F262813E800E662F4 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8540E484262814DD00E662F4 /* ReactorKit in Frameworks */,
+				8540E48E2628258500E662F4 /* RxDataSources in Frameworks */,
+				8540E48C2628258500E662F4 /* Differentiator in Frameworks */,
+				8540E488262824A700E662F4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,30 @@
 		8540E45F2628133700E662F4 /* TimerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8540E4602628133700E662F4 /* AppDelegate.swift */,
-				8540E4622628133700E662F4 /* SceneDelegate.swift */,
-				8540E4642628133700E662F4 /* ViewController.swift */,
-				8540E4662628133700E662F4 /* Main.storyboard */,
+				8540E479262813A000E662F4 /* AppDelegate */,
+				8540E4782628136A00E662F4 /* Resources */,
+				8540E47C262813CA00E662F4 /* TimerViewController.swift */,
+				8540E47F262813E800E662F4 /* TimerViewModel.swift */,
+			);
+			path = TimerDemo;
+			sourceTree = "<group>";
+		};
+		8540E4782628136A00E662F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				8540E4692628133800E662F4 /* Assets.xcassets */,
 				8540E46B2628133800E662F4 /* LaunchScreen.storyboard */,
 				8540E46E2628133800E662F4 /* Info.plist */,
 			);
-			path = TimerDemo;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8540E479262813A000E662F4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8540E4602628133700E662F4 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,12 @@
 			dependencies = (
 			);
 			name = TimerDemo;
+			packageProductDependencies = (
+				8540E483262814DD00E662F4 /* ReactorKit */,
+				8540E487262824A700E662F4 /* SnapKit */,
+				8540E48B2628258500E662F4 /* Differentiator */,
+				8540E48D2628258500E662F4 /* RxDataSources */,
+			);
 			productName = TimerDemo;
 			productReference = 8540E45D2628133700E662F4 /* TimerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +137,11 @@
 				Base,
 			);
 			mainGroup = 8540E4542628133700E662F4;
+			packageReferences = (
+				8540E482262814DD00E662F4 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				8540E486262824A700E662F4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8540E48A2628258500E662F4 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+			);
 			productRefGroup = 8540E45E2628133700E662F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +158,6 @@
 			files = (
 				8540E46D2628133800E662F4 /* LaunchScreen.storyboard in Resources */,
 				8540E46A2628133800E662F4 /* Assets.xcassets in Resources */,
-				8540E4682628133700E662F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8540E4652628133700E662F4 /* ViewController.swift in Sources */,
+				8540E47D262813CA00E662F4 /* TimerViewController.swift in Sources */,
+				8540E480262813E800E662F4 /* TimerViewModel.swift in Sources */,
 				8540E4612628133700E662F4 /* AppDelegate.swift in Sources */,
-				8540E4632628133700E662F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8540E4662628133700E662F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8540E4672628133700E662F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8540E46B2628133800E662F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G855D43NU5;
-				INFOPLIST_FILE = TimerDemo/Info.plist;
+				INFOPLIST_FILE = TimerDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +330,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G855D43NU5;
-				INFOPLIST_FILE = TimerDemo/Info.plist;
+				INFOPLIST_FILE = TimerDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +364,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8540E482262814DD00E662F4 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		8540E486262824A700E662F4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		8540E48A2628258500E662F4 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8540E483262814DD00E662F4 /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8540E482262814DD00E662F4 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		8540E487262824A700E662F4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8540E486262824A700E662F4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		8540E48B2628258500E662F4 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8540E48A2628258500E662F4 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		8540E48D2628258500E662F4 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8540E48A2628258500E662F4 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8540E4552628133700E662F4 /* Project object */;
 }
